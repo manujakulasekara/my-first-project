@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SkyBound Travel - Your journey starts here with amazing travel packages.">
+    <title>SkyBound Travel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>SkyBound Travel</h1>
+        <p>Your Journey Starts Here</p>
+    </header>
+
+    <nav>
+        <a href="#home" class="nav-btn">Home</a>
+        <a href="#destinations" class="nav-btn">Destinations</a>
+        <a href="#packages" class="nav-btn">Packages</a>
+        <a href="#contact" class="nav-btn">Contact</a>
+    </nav>
+
+    <main class="main-container">
+        <section class="content-section" id="home">
+            <h2>Welcome to SkyBound Travel</h2>
+            <p>Welcome to our travel agency platform. We offer the best tour packages worldwide to make your dream vacation a reality.</p>
+            <p>Explore our featured destinations below and book your trip today with us!</p>
+
+            <h2 id="destinations">Featured Destinations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Destination</th>
+                        <th>Country</th>
+                        <th>Price/Night</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bali</td>
+                        <td>Indonesia</td>
+                        <td>$120/night</td>
+                        <td><button type="button">Add to Trips</button></td>
+                    </tr>
+                    <tr>
+                        <td>Paris</td>
+                        <td>France</td>
+                        <td>$200/night</td>
+                        <td><button type="button">Add to Trips</button></td>
+                    </tr>
+                    <tr>
+                        <td>Tokyo</td>
+                        <td>Japan</td>
+                        <td>$150/night</td>
+                        <td><button type="button">Add to Trips</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <aside class="sidebar" id="contact">
+            <h2>Quick Enquiry</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <select id="destination" name="destination">
+                        <option value="bali">Bali</option>
+                        <option value="paris">Paris</option>
+                        <option value="tokyo">Tokyo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Enquiry</button>
+            </form>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SkyBound Travel. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
